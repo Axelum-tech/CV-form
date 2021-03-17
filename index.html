@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+.form_area{
+    width: 40%;
+    background: rgb(164, 169, 214);
+    text-align: center;
+    display: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="form_area">
+
+
+    <form action="mailto:v.istrati@developmentaid.org" method="POST" enctype="text/plain">
+        <br>
+        <label for="first_name">First name</label>
+        <input type="text" id="first_name">
+        <br><br>
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name">
+        <br><br>
+        <label for="adress">Adress</label>
+        <input type="text" id="adress" value="My Adress">
+        <br><br>
+
+        <label for="city">City</label>
+        <select name="city" id="city">
+            <option value="Chisinau">Chisinau</option>
+            <option value="Orhei">Orhei</option>
+            <option value="Balti">Balti</option>
+            <option value="Drochia">Drochia</option>
+            <option value="Cimislia">Cimilsia</option>
+            <option value="Cahul">Cahul</option>
+        </select>
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" >Female</label>
+        <br><br>
+
+        <label for="smoker">Do you smoke?</label>
+        <input type="radio" id="yes" name="smoker" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="smoker" value="no">
+        <label for="no">No</label>
+        <br><br>
+
+        <label for="coffee_drinker">How many cups of cofee do you drink a day?</label><br>
+        <input type="radio" id="0_2" name="coffee_drinker" value="0_2">
+        <label for="0_2">0 to 2 Cup(s)</label>
+        <input type="radio" id="2_4" name="coffee_drinker" value="2_4">
+        <label for="2_4">2 to 4 Cups</label>
+        <br>
+        <input type="radio" id="4_8" name="coffee_drinker" value="4_8">
+        <label for="4_8">4 to 8 Cups</label>
+        <input type="radio" name="coffee_drinker" id="8_16" value="8_16">
+        <label for="8_16">8 to 16 Cups</label> 
+        <br><br>
+
+        <label for="pc">Do you own a personal computer</label>
+        <select name="pc" id="pc">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br><br>
+
+        <label for="question1">How long would it take to make HTML form?</label>
+        <br>
+        <input type="text" id="question1" maxlength="30" size="30">
+        <br><br>
+
+        <label for="comments">Comments:</label>
+        <br>
+        <textarea name="comments" id="comments" cols="32" rows="5"></textarea>
+        <br>
+
+        <input type="reset" value="Reset Form">
+        <input type="submit" value="Send Survey">
+        <br><br>
+
+    </form>
+</div>
+    
+</body>
+</html>
